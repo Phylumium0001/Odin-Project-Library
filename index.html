@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Library</title>
+</head>
+<body>
+    <header><h1>Library Genesis</h1></header>
+
+    <main>
+        <aside class="bookAddCont">
+            <form class="book-form">
+                <h3>Add book to library</h3>
+                <div class="form-row">
+                    <label for="title">Title of book</label>
+                    <input type="text" name="book-title" id="title">
+                </div>
+            
+                <div class="form-row">
+                    <label for="author">Author</label>
+                    <input type="text" name="book-author" id="author">
+                </div>
+
+                <div class="form-row">
+                    <label for="pages">Pages</label>
+                    <input type="number" name="book-pages" id="pages">
+                </div>
+                
+                <div class="form-row-2">
+                    <legend>Have you read the book</legend>
+                    <div class="opt">
+                        <input type="radio" name="read-status" id="read-status-1" ,value="true"checked>
+                        <label for="read-status-1" class="radio-label">Yes, i have read it</label>
+                    </div>
+                    <div class="opt">
+                        <input type="radio" name="read-status" id="read-status-2" ,value="false">
+                        <label for="read-status-2" class="radio-label">No, i have not</label>
+                    </div>
+                </div>
+
+                <div class="submit-button">
+                    <button type="submit" class="submit">Add to library</button>
+                </div>
+            </form>
+            
+            <div class="refresh-cont">
+                <button class="refresh" onclick="displayBooks()">Refresh Library</button>
+            </div>
+        </aside>
+
+        <section class="bookstore-cont">
+            <h3>Books</h3>
+            <section class="bookstore">
+                
+                <!-- Books Container -->
+            </section>
+        </section>
+        
+        <!-- <button class="refresh" onclick="displayBooks()">Update Books</button> -->
+    </main>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
